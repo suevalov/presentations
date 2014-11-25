@@ -675,27 +675,33 @@ a:hover {
   Backgrounds
 */
 .bespoke-backdrop.intro {
-  background-image: url("/images/surfing2.gif");
+  background-image: url("../images/surfing2.gif");
   -webkit-filter: blur(1px) grayscale(0.1) brightness(0.9);
   filter: blur(1px) grayscale(0.1) brightness(0.9);
 }
 .bespoke-backdrop.slide4 {
-  background-image: url("/images/recipe.gif");
+  background-image: url("../images/recipe.gif");
 }
 .bespoke-backdrop.dig {
-  background-image: url("/images/digit.gif");
+  background-image: url("../images/digit.gif");
 }
 .bespoke-backdrop.twitter {
-  background-image: url("/images/follow.gif");
+  background-image: url("../images/follow.gif");
 }
 .bespoke-backdrop.sources {
-  background-image: url("/images/dogs.gif");
+  background-image: url("../images/dogs.gif");
 }
 .bespoke-backdrop.conference {
-  background-image: url("/images/conference.gif");
+  background-image: url("../images/conference.gif");
 }
 .bespoke-backdrop.backup {
-  background-image: url("/images/backup.gif");
+  background-image: url("../images/backup.gif");
+}
+.bespoke-backdrop.ironman {
+  background-image: url("../images/ironman-thanks.gif");
+}
+.bespoke-backdrop.share-repeat {
+  background-image: url("../images/share-repeat.gif");
 }
 .bespoke-backdrop.green {
   background-color: #00f3a5;
@@ -746,7 +752,7 @@ section .me {
   height: 80px;
   border-radius: 60px;
   background-size: cover;
-  background-image: url("/images/me.png");
+  background-image: url("../images/me.png");
 }
 section .me-contacts {
   margin: 20 auto;
@@ -772,118 +778,247 @@ section.slide5 ul {
   text-align: center;
   font-size: 35px;
 }
-section.slide7 ul,
-section.slide8 ul {
+section.slide11 h2,
+section.slide12 h2,
+section.slide13 h2,
+section.slide15 h2,
+section.slide18 h2 {
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+section.slide13 ul,
+section.slide15 ul,
+section.slide18 ul {
+  text-align: center;
+}
+.links-list a.more {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.links-list ul {
   zoom: 1;
   padding: 0;
   width: 1050px;
   margin: 0 auto;
 }
-section.slide7 ul:after,
-section.slide8 ul:after,
-section.slide7 ul:before,
-section.slide8 ul:before {
+.links-list ul:after,
+.links-list ul:before {
   content: "";
   display: table;
 }
-section.slide7 ul:after,
-section.slide8 ul:after {
+.links-list ul:after {
   clear: both;
 }
-section.slide7 li,
-section.slide8 li {
-  width: 350px;
+.links-list li {
+  width: 320px;
   padding: 0;
   margin: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  float: left;
 }
-section.slide7 li.center,
-section.slide8 li.center {
+.links-list li.center {
   width: 1050px;
   text-align: center;
 }
-section.slide7 .people,
-section.slide8 .people {
+li.people {
   margin-bottom: 80px;
-  float: left;
 }
-section.slide7 .people .photo,
-section.slide8 .people .photo {
+li.people .photo {
   float: left;
   width: 100px;
   height: 100px;
   border-radius: 160px;
   background-size: cover;
 }
-section.slide7 .people .photo.osmani,
-section.slide8 .people .photo.osmani {
-  background-image: url("/images/devs/osmani.jpg");
+li.people .photo.osmani {
+  background-image: url("../images/devs/osmani.jpg");
 }
-section.slide7 .people .photo.rauschma,
-section.slide8 .people .photo.rauschma {
+li.people .photo.rauschma {
   background-image: url("https://pbs.twimg.com/profile_images/467581434434453504/iFzELOBn_200x200.jpeg");
 }
-section.slide7 .people .photo.alman,
-section.slide8 .people .photo.alman {
+li.people .photo.alman {
   background-image: url("https://pbs.twimg.com/profile_images/378800000410052450/1a63764bcdb34d27cc63952604ee9f00_200x200.jpeg");
 }
-section.slide7 .people .photo.croll,
-section.slide8 .people .photo.croll {
+li.people .photo.croll {
   background-image: url("https://avatars3.githubusercontent.com/u/604030?v=3&s=200");
 }
-section.slide7 .people .photo.coyer,
-section.slide8 .people .photo.coyer {
-  background-image: url("/images/devs/coyer.jpg");
+li.people .photo.coyer {
+  background-image: url("../images/devs/coyer.jpg");
 }
-section.slide7 .people .photo.frost,
-section.slide8 .people .photo.frost {
+li.people .photo.frost {
   background-image: url("https://pbs.twimg.com/profile_images/499941427820769281/8tYwgR5r_200x200.png");
 }
-section.slide7 .people .photo.heilmann,
-section.slide8 .people .photo.heilmann {
-  background-image: url("/images/devs/heilmann.jpg");
+li.people .photo.heilmann {
+  background-image: url("../images/devs/heilmann.jpg");
 }
-section.slide7 .people .photo.walsh,
-section.slide8 .people .photo.walsh {
+li.people .photo.walsh {
   background-image: url("https://pbs.twimg.com/profile_images/2587630901/6gk0dqubt5512yk18a6o_200x200.png");
 }
-section.slide7 .people .photo.resig,
-section.slide8 .people .photo.resig {
+li.people .photo.resig {
   background-image: url("https://pbs.twimg.com/profile_images/453551474711097345/tXmNE9Cj_200x200.jpeg");
 }
-section.slide7 .people .photo.irish,
-section.slide8 .people .photo.irish {
+li.people .photo.irish {
   background-image: url("https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3_200x200.jpeg");
 }
-section.slide7 .people .photo.sorhus,
-section.slide8 .people .photo.sorhus {
+li.people .photo.sorhus {
   background-image: url("https://pbs.twimg.com/profile_images/518194446987313152/cFNRJK2U_200x200.png");
 }
-section.slide7 .people .photo.ashkenas,
-section.slide8 .people .photo.ashkenas {
+li.people .photo.ashkenas {
   background-image: url("https://assets.digitalocean.com/blog/devs_2014/JeremyA.png");
 }
-section.slide7 .people .photo.harisov,
-section.slide8 .people .photo.harisov {
+li.people .photo.harisov {
   background-image: url("https://pbs.twimg.com/profile_images/378800000025652857/a9a95d81ac90ed60c1da9db03aee5e5b_400x400.jpeg");
 }
-section.slide7 .people .photo.veged,
-section.slide8 .people .photo.veged {
+li.people .photo.veged {
   background-image: url("https://pbs.twimg.com/profile_images/441146598156804096/ZU8Luah0_400x400.jpeg");
 }
-section.slide7 .people .photo.operatino,
-section.slide8 .people .photo.operatino {
+li.people .photo.operatino {
   background-image: url("https://pbs.twimg.com/profile_images/378800000452656560/3000fb0576d4bf804da43ce920ada6da_400x400.jpeg");
 }
-section.slide7 .people .info,
-section.slide8 .people .info {
+li.people .info {
   float: left;
+  width: 210px;
   text-align: left;
   line-height: 30px;
   margin-top: 20px;
   margin-left: 10px;
   font-size: 22px;
 }
-section.slide7 .people .info a,
-section.slide8 .people .info a {
+li.people .info a {
   display: block;
+}
+li.resource {
+  margin-bottom: 80px;
+}
+li.resource .logo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border-radius: 160px;
+  background-size: cover;
+}
+li.resource .logo.dailyjs {
+  background-image: url("../images/resources/djs.gif");
+}
+li.resource .logo.treehouse {
+  background-image: url("../images/resources/treehouse.png");
+}
+li.resource .logo.echojs {
+  background-image: url("../images/resources/echojs.png");
+}
+li.resource .logo.html5rocks {
+  background-image: url("../images/resources/html5rocks.jpg");
+}
+li.resource .logo.smashing {
+  background-image: url("../images/resources/smashing.png");
+}
+li.resource .logo.tuts {
+  background-image: url("../images/resources/tuts.png");
+}
+li.resource .logo.csstricks {
+  background-image: url("../images/resources/csstricks.png");
+}
+li.resource .logo.codrops {
+  background-image: url("../images/resources/codrops.png");
+}
+li.resource .logo.habr {
+  background-image: url("../images/resources/habr.png");
+}
+li.resource .logo.shoptalk {
+  background-image: url("../images/resources/shoptalk.jpg");
+}
+li.resource .logo.radiot {
+  background-image: url("../images/resources/radiot.jpg");
+}
+li.resource .logo.radiojs {
+  background-image: url("../images/resources/radiojs.svg");
+}
+li.resource .logo.jsjabber {
+  background-image: url("../images/resources/jsjabber.jpeg");
+}
+li.resource .logo.advangular {
+  background-image: url("../images/resources/angular.jpeg");
+}
+li.resource .logo.frontflip {
+  background-image: url("../images/resources/frontflip.jpg");
+}
+li.resource .logo.fronteers {
+  background-image: url("https://pbs.twimg.com/profile_images/489759577940819968/bmOZvvAQ_200x200.png");
+}
+li.resource .logo.coldfront {
+  background-image: url("https://pbs.twimg.com/profile_images/463385836340269056/wspCZk1e_200x200.png");
+}
+li.resource .logo.fronttrends {
+  background-image: url("https://pbs.twimg.com/profile_images/508252352860532736/yfYw-MtV_200x200.png");
+}
+li.resource .logo.wsd {
+  background-image: url("http://hsto.org/storage1/ade6ca39/8973b866/9793b96c/dc6a121c.png");
+}
+li.resource .logo.moscowjs {
+  background-image: url("http://www.moscowjs.ru/images/logo.svg");
+}
+li.resource .logo.yac {
+  background-image: url("../images/resources/yac.svg");
+}
+li.resource .info {
+  float: left;
+  width: 210px;
+  text-align: left;
+  line-height: 100px;
+  margin-left: 10px;
+  font-size: 26px;
+}
+li.resource .info a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.quotes {
+  text-align: center;
+}
+.quotes .photo {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  border-radius: 160px;
+  background-size: cover;
+}
+.quotes .photo.osmani {
+  background-image: url("../images/devs/osmani.jpg");
+}
+.quotes .photo.sexton {
+  background-image: url("https://pbs.twimg.com/profile_images/487427389123608576/RDW9a0J3_200x200.jpeg");
+}
+.quotes .photo.lindley {
+  background-image: url("https://media.licdn.com/mpr/mpr/shrink_200_200/p/4/000/15e/1fc/0193e02.jpg");
+}
+blockquote {
+  font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 50px;
+  font-size: 30px;
+  line-height: 40px;
+}
+section.thanks {
+  text-align: left;
+}
+section.thanks .content {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  padding-left: 100px;
+}
+section.thanks h2 {
+  font-size: 70px;
+}
+section.thanks a {
+  font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-left: 10px;
+  display: block;
+  line-height: 26px;
 }
