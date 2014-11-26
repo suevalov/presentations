@@ -1,0 +1,57 @@
+doctype html
+html(prefix="og: http://ogp.me/ns#")
+  head
+    meta(property="og:title" content="Alexander Suevalov. Workshops and Presentations.")
+    meta(property="og:url" content="http://pres.suevalov.com")
+    meta(property="og:locale" content="en_GB")
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Workshops and Presentation by Alexander Suevalov
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css")
+  body
+    <!--[if lt IE 9]><p class="chromeframe">You are using an outdated browser.<a href="http://browsehappy.com/">Upgrade your browser today</a>or<a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>to better experience this site.</p><![endif]-->
+
+    .content
+      h1 Workshops and Presentations
+      .nav
+        a(href="http://suevalov.com") http://suevalov.com
+      ul.list
+        li.presentation.pure-g
+          .pure-u-1.pure-u-md-1-3
+            a(href="/keep-yourself-up-to-date")
+              img.presentation__image(src="images/keep-yourself-up-to-date.png")
+          .pure-u-1.pure-u-md-2-3
+            .presentation__info
+              a(href="/keep-yourself-up-to-date")
+                h3 Keep yourself up to date
+              p A talk about how to keep yourself up to date in extremly rapidly evolving universe of software development
+
+    script.
+      (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+          try {
+            w.yaCounter27193172 = new Ya.Metrika({
+              id: 27193172,
+              trackHash: true
+            });
+          } catch (e) {
+          }
+        });
+        var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () {
+            n.parentNode.insertBefore(s, n);
+          };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+          f();
+        }
+      })(document, window, "yandex_metrika_callbacks");
+    noscript
+      div
+        img(src="//mc.yandex.ru/watch/27193172" style="position:absolute; left:-9999px;" alt="")
