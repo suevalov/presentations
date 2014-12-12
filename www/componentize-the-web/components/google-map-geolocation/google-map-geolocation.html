@@ -1,0 +1,28 @@
+<link rel="import" href="../../bower_components/google-map/google-map.html">
+<link rel="import" href="../current-location/current-location.html">
+
+<polymer-element name="google-map-geolocation" extends="current-location">
+  <template>
+    <style>
+      google-map {
+        display: block;
+        width: inherit;
+        height: inherit;
+      }
+    </style>
+    <current-location position="{{position}}"></current-location>
+    <template if="{{position}}">
+      <content></content>
+      <google-map latitude="{{position.coords.latitude}}" longitude="{{position.coords.longitude}}" zoom="15">
+        <google-map-marker latitude="{{position.coords.latitude}}" longitude="{{position.coords.longitude}}">
+          <h3>I'm here</h3>
+        </google-map-marker>
+      </google-map>
+    </template>
+  </template>
+  <script>
+    Polymer('google-map-geolocation', {
+      applyAuthorStyles: true
+    });
+  </script>
+</polymer-element>

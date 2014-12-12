@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta property="og:title" content="Polymer. Componentize The Web.">
+  <meta property="og:url" content="http://pres.suevalov.com/polymer-componentize-the-web">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_GB">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Polymer. Componentize The Web.</title>
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Open+Sans:300,400,700" rel="stylesheet"
+        type="text/css">
+  <link rel="stylesheet" type="text/css" href="build/build.css">
+  <script src="../bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <link rel="import" href="bower_components/prism-js/prism-js.html">
+  <link rel="import" href="components/google-map-geolocation/google-map-geolocation.html">
+  <link rel="import" href="components/gangnam-style/gangnam-style.html">
+  <link rel="import" href="components/x-instagram/x-instagram.html">
+</head>
+<body><!--[if lt IE 9]><p class="chromeframe">You are using an outdated browser.<a href="http://browsehappy.com/">Upgrade
+  your browser today</a>or<a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>to
+  better experience this site.</p><![endif]-->
+<article>
+  <section class="intro">
+    <div class="content">
+      <div class="logo"><img src="images/logo.svg"></div>
+      <h2>Componentize The Web</h2>
+
+      <div class="me"></div>
+      <div class="me-contacts">
+        <h4>Alexander Suevalov</h4><a href="http://suevalov.com" target="__blank">http://suevalov.com</a><a
+        href="mailto:asuevalov@dataart.com">asuevalov@dataart.com</a>
+      </div>
+    </div>
+  </section>
+  <section data-bespoke-backdrop="blue" class="slide2">
+    <div class="content">
+      <h2>Web Components?</h2>
+    </div>
+  </section>
+  <section class="slide3 webcomponent-example">
+    <div class="content">
+      <prism-js language="markup" escape>
+<google-map-geolocation></google-map-geolocation>
+      </prism-js>
+      <div class="webcomponent">
+        <google-map-geolocation></google-map-geolocation>
+      </div>
+    </div>
+  </section>
+  <section class="slide4 webcomponent-example">
+    <div class="content">
+      <prism-js language="markup" escape="true">
+<gangnam-style></gangnam-style>
+      </prism-js>
+      <div class="webcomponent">
+        <gangnam-style></gangnam-style>
+      </div>
+    </div>
+  </section>
+  <section class="slide5 webcomponent-example">
+    <div class="content">
+      <prism-js language="markup" escape>
+<x-instagram tag='dataart'></x-instagram>
+      </prism-js>
+      <div class="webcomponent">
+        <x-instagram tag="dataart"></x-instagram>
+      </div>
+    </div>
+  </section>
+  <section data-bespoke-backdrop="pink" class="slide6 what-problems-solving">
+    <div class="content">
+      <h2>What problems are we solving?</h2>
+    </div>
+  </section>
+  <section class="slide7 web-applications">
+    <div class="content"><img src="images/webapplications.svg"></div>
+  </section>
+  <section class="slide8 tabs-example content-wide">
+    <div class="content">
+      <h3>Building a tab component on the web...</h3>
+
+      <div class="pure-g">
+        <div class="pure-u-1-5"></div>
+        <div class="pure-u-3-5">
+          <ul>
+            <li class="bullet"><img src="images/tabs-code-1.png"></li>
+            <li class="bullet"><img src="images/tabs-code-2.png"></li>
+            <li class="bullet"><img src="images/tabs-code-3.png"></li>
+            <li class="bullet"><img src="images/tabs-code-4.png"></li>
+          </ul>
+        </div>
+        <div class="pure-u-1-5"></div>
+      </div>
+    </div>
+  </section>
+  <section data-bespoke-backdrop="insane" class="slide9 insane">
+    <div class="content">
+      <h1>Insane!</h1>
+    </div>
+  </section>
+
+
+  <section data-bespoke-backdrop="pink" class="slide10 less-code">
+    <div class="content">
+      <div class="pure-g">
+        <div class="pure-u-3-5">
+          <h1>Web Components</h1>
+
+          <h4>Less code. Less confusion.</h4>
+          <div class="code-container">
+            <prism-js language="markup" escape="true">
+<paper-tabs>
+  <paper-tab>KNOWLEDGE</paper-tab>
+  <paper-tab>HISTORY</paper-tab>
+  <paper-tab>FOOD</paper-tab>
+</paper-tabs>
+            </prism-js>
+          </div>
+        </div>
+        <div class="pure-u-2-5">
+          <img src="images/phone.png" class="phone" />
+          <img src="images/paper-tabs.gif" class="tabs" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section data-bespoke-backdrop="shock" class="slide11 shock">
+    <div class="content">
+      <h1>Just stunning!</h1>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="pink" class="slide12 what-are-webcomponents">
+    <div class="content">
+      <h2>What are Web Components?</h2>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="blue" class="slide13 specification-title">
+    <div class="content">
+      <h2>Custom Elements</h2>
+      <h4>define new HTML/DOM elements</h4>
+    </div>
+  </section>
+
+  <section class="slide14 gmail">
+    <div class="content"><img src="images/gmail.png" /></div>
+  </section>
+
+  <section class="slide15 content-wide">
+    <div class="content">
+      <h3>Custom Elements</h3>
+      <div class="pure-g">
+        <div class="pure-u-1-2" style="height: 320px;">
+          <ul>
+            <li>declarative, readable</li>
+            <li>meaningful HTML</li>
+            <li>common way to extend -> reusable</li>
+          </ul>
+        </div>
+        <div class="pure-u-1-2">
+          <div class="bullet">
+            <prism-js language="markup" escape="true" theme="okaidia">
+<paper-tabs selected="1">
+  <paper-tab>Tab 1</paper-tab>
+  <paper-tab>Tab 2</paper-tab>
+  <paper-tab>Tab 3</paper-tab>
+</paper-tabs>
+            </prism-js>
+          </div>
+          <div class="bullet">
+            <prism-js language="javascript" escape="true" theme="okaidia">
+var tabs = document.querySelector('paper-tabs');
+tabs.addEventListener('core-activate', function() {
+  console.log(this.selected);
+});
+            </prism-js>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <img src="images/tabs-selected-example.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="blue" class="specification-title">
+    <div class="content">
+      <h2>Templates</h2>
+      <h4>native client-side templating</h4>
+    </div>
+  </section>
+
+  <section class="slide17 content-wide">
+    <div class="content">
+      <h3>HTML Templates</h3>
+      <div class="pure-g">
+        <div class="pure-u-1-2" style="height: 350px;">
+          <ul>
+            <li><strong>use DOM</strong> to scaffold DOM</li>
+            <li><strong>parsed</strong>, not rendered</li>
+            <li><strong>content is inert</strong> until cloned/used</li>
+            <li><strong>doc fragment</strong> - not part of the page</li>
+          </ul>
+        </div>
+        <div class="pure-u-1-2">
+          <prism-js language="markup" escape="true" theme="okaidia">
+<template>
+  <div class="comment">
+    <img src="image.png">
+  </div>
+  <script>...</script>
+</template>
+          </prism-js>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="blue" class="specification-title">
+    <div class="content">
+      <h2>Shadow DOM</h2>
+      <h4>DOM/CSS scoping</h4>
+    </div>
+  </section>
+
+  <section class="slide19 content-wide">
+    <div class="content">
+      <h3>Shadow DOM</h3>
+      <img src="images/video.png">
+      <div>
+        <prism-js language="markup">
+&lt;video src="foo.webm" controls&gt;&lt;/video&gt;
+        </prism-js>
+      </div>
+      <div class="bullet"></div>
+      <div class="bullet">
+        <img class="dom" src="images/video-dom.png">
+      </div>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="blue" class="specification-title">
+    <div class="content">
+      <h2>HTML Imports</h2>
+      <h4>loading web components</h4>
+    </div>
+  </section>
+
+  <section class="slide21 content-wide">
+    <div class="content">
+      <h3>HTML Imports</h3>
+      <div class="bullet">
+        <prism-js language="markup" theme="okaidia">
+&lt;link rel="stylesheet" href="bootstrap.css"&gt;
+&lt;link rel="stylesheet" href="fonts.css"&gt;
+&lt;script src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="bootstrap.js"&gt;&lt;/script&gt;
+&lt;script src="bootstrap-tooltip.js"&gt;&lt;/script&gt;
+&lt;script src="bootstrap-dropdown.js"&gt;&lt;/script&gt;
+        </prism-js>
+      </div>
+      <div class="bullet">
+        <prism-js language="markup" theme="okaidia">
+&lt;link rel="import" href="bootstrap.html"&gt;
+        </prism-js>
+      </div>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="blue" class="slide22 web-components-building-blocks">
+    <div class="content">
+      <h2>Web Component building blocks</h2>
+      <ul>
+        <li><h4>Custom Elements</h4></li>
+        <li><h4>HTML Templates</h4></li>
+        <li><h4>Shadow DOM</h4></li>
+        <li><h4>HTML Imports</h4></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide23 browser-support">
+    <div class="content">
+      <h2>Browser Support</h2>
+      <h4>Summer 2014</h4>
+      <img src="images/browser-support-1.png">
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="frustrated" class="slide24 frustrated">
+  </section>
+
+  <section class="slide25">
+    <div class="content">
+      <img src="images/lockup.svg" />
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="pink" class="slide26">
+    <div class="content">
+      <h2>Polyfills Web Components</h2>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="pink" class="slide27">
+    <div class="content">
+      <h2>Adds syntactic sugar</h2>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="pink" class="slide28">
+    <div class="content">
+      <h2>Gives comprehensive set of UI Components</h2>
+    </div>
+  </section>
+
+  <section class="slide29 browser-support">
+    <div class="content">
+      <h2>Browser Support with Polymer</h2>
+      <h4>Summer 2014</h4>
+      <img src="images/browser-support-2.png">
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="tranquil" class="slide30">
+    <div class="content">
+      <h2>Sugaring: Custom Elements</h2>
+    </div>
+  </section>
+
+  <section class="slide31 code-comparing">
+    <div class="content">
+      <div class="pure-g bullet">
+        <div class="pure-u-1-3"><span>vanilla js</span></div>
+        <div class="pure-u-2-3">
+          <prism-js language="javascript" escape="true">
+document.registerElement('paper-tabs', {
+  prototype: Object.create(HTMLElement.prototype)
+});
+          </prism-js>
+        </div>
+      </div>
+      <div class="pure-g bullet">
+        <div class="pure-u-1-3"><span>polymer</span></div>
+        <div class="pure-u-2-3">
+<prism-js language="markup">
+&lt;polymer-element name='paper-tabs'&gt;
+  …
+&lt;/polymer-element&gt;
+</prism-js>
+        </div>
+      </div>
+      <div class="pure-g bullet">
+        <div class="pure-u-1-3"><span>usage</span></div>
+        <div class="pure-u-2-3">
+<prism-js language="markup">
+&lt;paper-tabs&gt;…&lt;/paper-tabs&gt;
+// document.createElement('paper-tabs');
+</prism-js>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide32 code-comparing">
+    <div class="content">
+      <div class="pure-g bullet">
+        <div class="pure-u-1-3"><span>vanilla js</span></div>
+        <div class="pure-u-2-3">
+          <prism-js language="javascript" escape="true">
+document.registerElement('super-button', {
+  prototype: Object.create(HTMLButtonElement.prototype),
+  extends: 'button'
+});
+          </prism-js>
+        </div>
+      </div>
+      <div class="pure-g bullet">
+        <div class="pure-u-1-3"><span>polymer</span></div>
+        <div class="pure-u-2-3">
+          <prism-js language="markup">
+&lt;polymer-element name='super-button' extends='button'&gt;
+…
+&lt;/polymer-element&gt;
+          </prism-js>
+        </div>
+      </div>
+      <div class="pure-g bullet">
+        <div class="pure-u-1-3"><span>usage</span></div>
+        <div class="pure-u-2-3">
+          <prism-js language="markup">
+&lt;button is='super-button'&gt;…&lt;/button&gt;
+// document.createElement('button', 'super-button');
+          </prism-js>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="tranquil" class="slide33">
+    <div class="content">
+      <h2>Sugaring: Templates</h2>
+    </div>
+  </section>
+
+  <section class="slide34 code-comparing">
+    <div class="content">
+      <div class="pure-g bullet">
+        <div class="pure-u-1-3"><span>vanilla js</span></div>
+        <div class="pure-u-2-3">
+          <prism-js language="javascript" escape="true">
+var shadow = el.createShadowRoot();
+shadow.innerHTML = "<style>...</style>"
+            + "<h2>I'm a profile card</h2>";
+          </prism-js>
+        </div>
+      </div>
+      <div class="pure-g bullet">
+        <div class="pure-u-1-3"><span>polymer</span></div>
+        <div class="pure-u-2-3">
+          <prism-js language="markup">
+&lt;polymer-element name='profile-card' noscript&gt;
+  &lt;template&gt;
+    &lt;link rel='stylesheet' href='styles.css'&gt;
+    &lt;h2&gt;I’m a profile-card&lt;/h2&gt;
+  &lt;/template&gt;
+&lt;/polymer-element>
+          </prism-js>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide35">
+    <div class="content"><img src="images/polymer-graph.png"/></div>
+  </section>
+
+  <section data-bespoke-backdrop="thinking" class="slide36 thinking">
+    <div class="content"><h2>Thinking in components</h2></div>
+  </section>
+
+  <section class="slide37 html-elements">
+    <div class="content">
+      <h2>Types of HTML Elements</h2>
+      <img src="images/html-elements.png"/></div>
+  </section>
+
+  <section class="slide38 core-elements">
+    <div class="content">
+      <h2>Polymer's core elements</h2>
+      <img src="images/core-elements.png"/></div>
+  </section>
+
+  <section class="slide39 paper-elements">
+    <div class="content">
+      <h2>Paper elements</h2>
+      <div class="pure-g bullet">
+        <div class="pure-u-1-2">
+          <prism-js language="markup">
+&lt;paper-input&gt;...&lt;/paper-input&gt;
+          </prism-js>
+        </div>
+        <div class="pure-u-1-2">
+          <img src="images/paper-input.gif"/>
+        </div>
+      </div>
+      <div class="pure-g bullet">
+        <div class="pure-u-1-2">
+          <prism-js language="markup">
+&lt;paper-checkbox&gt;...&lt;/paper-checkbox&gt;
+          </prism-js>
+        </div>
+        <div class="pure-u-1-2">
+          <img src="images/paper-checkbox2.gif"/>
+        </div>
+      </div>
+      <div class="pure-g bullet">
+        <div class="pure-u-1-2">
+          <prism-js language="markup">
+&lt;paper-ripple&gt;...&lt;/paper-ripple&gt;
+          </prism-js>
+        </div>
+        <div class="pure-u-1-2">
+          <img src="images/paper-ripple2.gif"/>
+        </div>
+      </div>
+      <div class="pure-g bullet">
+        <div class="pure-u-1-1">
+          <img class="center" src="images/paper-playground.gif"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="polymer-project" class="slide40 polymer-project">
+    <div class="content">
+      <a href="https://www.polymer-project.org/" target="_blank"><h1>polymer-project.org</h1></a>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="chrome-status" class="slide41 chrome-status">
+    <div class="content">
+      <a href="https://www.chromestatus.com/" target="_blank"><h1>chromestatus.com</h1></a>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="custom-elements-site" class="slide42 custom-elements-site">
+    <div class="content">
+      <a href="http://customelements.io/" target="_blank"><h1>customelements.io</h1></a>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="webcomponents-site" class="slide43 webcomponents-site">
+    <div class="content">
+      <a href="http://webcomponents.org/" target="_blank"><h1>webcomponents.org</h1></a>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="cons" class="slide44">
+  </section>
+
+  <section data-bespoke-backdrop="revolution" class="slide44 revolution">
+    <div class="content">
+      <h1>Join The Revolution!</h1>
+    </div>
+  </section>
+
+  <section data-bespoke-backdrop="blue" class="thanks">
+    <div class="content">
+      <h2>Thanks</h2><a href="http://suevalov.com/" target="__blank">Alexander Suevalov</a><a
+      href="mailto:asuevalov@dataart.com">asuevalov@dataart.com</a><a href="https://github.com/suevalov"
+                                                                      target="__blank" class="github">http://github.com/suevalov</a><a
+      href="http://pres.suevalov.com" target="__blank" class="twitter">http://pres.suevalov.com/</a>
+    </div>
+  </section>
+</article>
+<script src="build/build.js"></script>
+</body>
+</html>
