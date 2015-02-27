@@ -836,46 +836,46 @@ li.people .photo.osmani {
   background-image: url("../images/devs/osmani.jpg");
 }
 li.people .photo.rauschma {
-  background-image: url("https://pbs.twimg.com/profile_images/467581434434453504/iFzELOBn_200x200.jpeg");
+  background-image: url("../images/devs/axel.jpeg");
 }
 li.people .photo.alman {
-  background-image: url("https://pbs.twimg.com/profile_images/378800000410052450/1a63764bcdb34d27cc63952604ee9f00_200x200.jpeg");
+  background-image: url("../images/devs/alman.jpeg");
 }
 li.people .photo.croll {
-  background-image: url("https://avatars3.githubusercontent.com/u/604030?v=3&s=200");
+  background-image: url("../images/devs/croll.png");
 }
 li.people .photo.coyer {
   background-image: url("../images/devs/coyer.jpg");
 }
 li.people .photo.frost {
-  background-image: url("https://pbs.twimg.com/profile_images/499941427820769281/8tYwgR5r_200x200.png");
+  background-image: url("../images/devs/frost.png");
 }
 li.people .photo.heilmann {
   background-image: url("../images/devs/heilmann.jpg");
 }
 li.people .photo.walsh {
-  background-image: url("https://pbs.twimg.com/profile_images/2587630901/6gk0dqubt5512yk18a6o_200x200.png");
+  background-image: url("../images/devs/walsh.png");
 }
 li.people .photo.resig {
-  background-image: url("https://pbs.twimg.com/profile_images/453551474711097345/tXmNE9Cj_200x200.jpeg");
+  background-image: url("../images/devs/resig.jpeg");
 }
 li.people .photo.irish {
-  background-image: url("https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3_200x200.jpeg");
+  background-image: url("../images/devs/irish.jpeg");
 }
 li.people .photo.sorhus {
-  background-image: url("https://pbs.twimg.com/profile_images/518194446987313152/cFNRJK2U_200x200.png");
+  background-image: url("../images/devs/sorhus.jpeg");
 }
 li.people .photo.ashkenas {
-  background-image: url("https://assets.digitalocean.com/blog/devs_2014/JeremyA.png");
+  background-image: url("../images/devs/ashkenas.png");
 }
-li.people .photo.harisov {
-  background-image: url("https://pbs.twimg.com/profile_images/378800000025652857/a9a95d81ac90ed60c1da9db03aee5e5b_400x400.jpeg");
+li.people .photo.makeev {
+  background-image: url("../images/devs/makeev.jpeg");
 }
 li.people .photo.veged {
-  background-image: url("https://pbs.twimg.com/profile_images/441146598156804096/ZU8Luah0_400x400.jpeg");
+  background-image: url("../images/devs/veged.jpeg");
 }
 li.people .photo.operatino {
-  background-image: url("https://pbs.twimg.com/profile_images/378800000452656560/3000fb0576d4bf804da43ce920ada6da_400x400.jpeg");
+  background-image: url("../images/devs/operatino.jpeg");
 }
 li.people .info {
   float: left;
@@ -945,19 +945,19 @@ li.resource .logo.frontflip {
   background-image: url("../images/resources/frontflip.jpg");
 }
 li.resource .logo.fronteers {
-  background-image: url("https://pbs.twimg.com/profile_images/489759577940819968/bmOZvvAQ_200x200.png");
+  background-image: url("../images/resources/fronteers.png");
 }
 li.resource .logo.coldfront {
-  background-image: url("https://pbs.twimg.com/profile_images/463385836340269056/wspCZk1e_200x200.png");
+  background-image: url("../images/resources/coldfront.png");
 }
 li.resource .logo.fronttrends {
-  background-image: url("https://pbs.twimg.com/profile_images/508252352860532736/yfYw-MtV_200x200.png");
+  background-image: url("../images/resources/fronttrends.png");
 }
 li.resource .logo.wsd {
-  background-image: url("http://hsto.org/storage1/ade6ca39/8973b866/9793b96c/dc6a121c.png");
+  background-image: url("../images/resources/wsd.png");
 }
 li.resource .logo.moscowjs {
-  background-image: url("http://www.moscowjs.ru/images/logo.svg");
+  background-image: url("../images/resources/moscowjs.svg");
 }
 li.resource .logo.yac {
   background-image: url("../images/resources/yac.svg");
@@ -990,10 +990,10 @@ li.resource .info a {
   background-image: url("../images/devs/osmani.jpg");
 }
 .quotes .photo.sexton {
-  background-image: url("https://pbs.twimg.com/profile_images/487427389123608576/RDW9a0J3_200x200.jpeg");
+  background-image: url("../images/devs/sexton.jpeg");
 }
 .quotes .photo.lindley {
-  background-image: url("https://media.licdn.com/mpr/mpr/shrink_200_200/p/4/000/15e/1fc/0193e02.jpg");
+  background-image: url("../images/devs/lindley.jpg");
 }
 blockquote {
   font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
