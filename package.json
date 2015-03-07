@@ -2,6 +2,11 @@
   "name": "pres.suevalov.com",
   "version": "0.0.1",
   "dependencies": {},
+  "private": true,
+  "dependencies": {
+    "compression": "^1.1.0",
+    "express": "4.8.0"
+  },
   "devDependencies": {
     "debowerify": "^0.7.1",
     "gulp": "^3.8.1",
