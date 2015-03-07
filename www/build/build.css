@@ -483,6 +483,7 @@ ul {
   list-style: none;
 }
 .presentation__image {
+  border: 3px solid #fff;
   width: 100%;
 }
 .presentation__info {
@@ -497,6 +498,7 @@ ul {
 .presentation__info p {
   font-weight: 300;
   font-size: 15px;
+  line-height: 21px;
 }
 @media screen and (max-width: 48em) {
   h1 {
