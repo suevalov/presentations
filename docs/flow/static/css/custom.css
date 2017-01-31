@@ -1,0 +1,51 @@
+/* Components */
+
+.suevalov img {
+    margin: 50px auto;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60px;
+}
+.suevalov a {
+    font-size: 2.5rem;
+}
+
+.external-link {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.console-error {
+    background-color: #FFF0F0;
+    border: 5px solid #FFE1E1;
+    color: #FF2A2A;
+    padding: 20px;
+    font-family: 'Cousine', monospace;
+    font-size: 2.5rem;
+}
+
+/* Slides */
+
+section.flow-intro h1 {
+    font-size: 8rem;
+    line-height: 9.5rem;
+    border-top: 1px dotted #FFF;
+    border-bottom: 1px dotted #FFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+section.flow-intro img.logo {
+    float: right;
+    width: 28.5rem;
+    height: 28.5rem;
+}
+section.flow-intro a,
+section.flow-into a:hover {
+    color: #FFF;
+    font-size: 3rem;
+}
+section.flow-intro .flow-intro__presentation-link {
+    margin-top: 50px;
+}
