@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Power-Up your JavaScript with Flow</title>
+
+    <meta name="description" content="">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/base.css">
+
+    <!-- CSS Colors -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/colors.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+    <link rel='stylesheet' type='text/css' media='all' href='static/css/custom.css'>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/zenburn.min.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://suevalov.com/presentations/flow"> <!-- YOUR URL -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Power-Up your JavaScript with Flow"> <!-- EDIT -->
+    <meta property="og:description" content=""> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:20:50"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@suevalov"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@suevalov"> <!-- EDIT -->
+    <meta name="twitter:title" content="Power-Up your JavaScript with Flow"> <!-- EDIT -->
+    <meta name="twitter:description" content=""> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="static/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="static/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="static/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="manifest.json"/>
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ffffff">
+
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Intro  -->
+        <section class="bg-green flow-intro">
+          <span class="background dark" style="background-image:url('static/images/code.jpg')"></span>
+          <div class="wrap aligncenter size-60">
+            <h2>
+              Power-Up your JavaScript
+              <br/>
+              with Flow
+            </h2>
+          </div>
+          <div class="wrap aligncenter">
+              <div class="flow-intro__presentation-link">  
+                <a href="http://suevalov.com/presentations/flow">
+                  http://suevalov.com/presentations/flow
+                </a>
+              </div>
+            <div class="suevalov">
+              <img src='static/images/suevalov.png' />
+              <div><a href="http://twitter.com/suevalov" target="__blank">@suevalov</a></div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="bg-black-blue">
+          <div class="wrap size-50">
+            <h2>The language we
+              <svg class="fa-heart-o">
+                <use xlink:href="#fa-heart-o"></use>
+              </svg>
+              so much
+            </h2>
+            <pre style='margin-top: 50px;'>
+            <code class="javascript">[] + [] // ''
+[] + {} // [object Object]
+{} + [] // 0
+{} + {} // NaN
+
+true + true === 2 // true
+true - true === 0 // true
+true === 1 // false</code>
+</pre>
+          </div>
+        </section>
+
+        <section class="bg-white">
+          <div class="wrap aligncenter">
+              <h1 style="background-color: #FFF;">
+                Static vs. Dynamic
+              </h1>
+              <img src="static/images/dynamic-static.jpg" style="width:50%;"/>                
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap aligncenter">
+            <h2>Gradual typing in JavaScript</h2>
+            <div class="grid vertial-align">
+              <div class="column" style="flex-direction: row-reverse">
+                  <img src="static/images/flow.png" width="400" height="400" />
+              </div>
+              <div class="column">
+                  <img src="static/images/ts.png" width="300" height="300" style="margin-top: 50px" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black-blue">
+          <div class="wrap aligncenter">
+            <div class="grid">
+              <div class="column" style="flex-direction: row-reverse">
+                  <img src="static/images/flow.png"/>
+              </div>
+              <div class="column" style="justify-content: center">
+                <h2>Static Type Checker for JavaScript</h2>
+                <p class="text-intro fadeInUp">...that keeps your sanity</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black-blue">
+          <div class="wrap size-70">
+            <pre style='margin-top: 50px;'><code class="javascript">function area (r) {
+  return Math.PI * r * r
+}
+
+const result = area("1O");
+</code></pre>
+          </div>
+        </section>
+
+        <section class="bg-black-blue">
+          <div class="wrap size-70">
+            <pre style='margin-top: 50px;'><code class="javascript">// @flow
+              
+function area (r) {
+  return Math.PI * r * r
+}
+
+const result = area("1O");
+                   <span style="color: red;">x</span> ^^^^ This type is incompatible with number.
+</code></pre>
+          </div>
+        </section>
+
+
+        <section class="bg-black-blue">
+          <div class="wrap size-70">
+            <pre style='margin-top: 50px;'><code class="javascript">function length (value) {
+  return value.length
+}
+
+const result = length(null);
+</code></pre>
+          </div>
+        </section>
+
+
+        <section class="bg-black-blue">
+          <div class="wrap size-70">
+            <pre style='margin-top: 50px;'><code class="javascript">// @flow
+
+function length (value) {
+  return value.length
+              <span style="color: red;">x</span> ^^ property `length`. Property cannot be accessed on possibly null value
+}
+
+const result = length(null);
+</code></pre>
+          </div>
+          <a class="button ghost external-link" href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQoWrWxkCuA7AxgC4CWsOo0ApjgOYEAWoAFAG4CG0WFAlKAN7KgAThQJZBZNhwoA6SjXqIAvokR5SAZwJCK6rNC0BeclVp1GOPdC4BuIA" target="__blank">
+                See in action ›
+          </a>
+        </section>
+
+
+        <section class="bg-black-blue">
+          <div class="wrap size-70">
+            <pre style='margin-top: 50px;'><code class="javascript">// @flow
+
+function length (value) {
+  if (value !== null) {
+    return value.length
+  }
+  return 0;
+}
+
+const result = length(null);
+</code></pre>
+          </div>
+          <a 
+            class="button ghost external-link"
+            target="__blank"
+            href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQoWrWxkCuA7AxgC4CWsOo0ApjgOYEAWoAFAG4CG0WFAlKAN7KgikJmw4VQAQgC8U0DizRoPfgEgUAJwoEs6sqM4A6SjXoBuAQF8Bm7btAAGc1cR5SAZwKhNbhZ9nHaOkZ5RS5TIA"
+          >
+                See in action ›
+          </a>
+        </section>
+
+        <section class="bg-black-blue">
+          <div class="wrap size-70">
+            <h3>Changes break applications</h3>
+            <pre style='margin-top: 30px;'><code class="javascript">// @flow
+
+function showModal(params) {
+  console.log(params.title);
+  console.log(params.content);
+}
+
+function sayHello (user) {
+  showModal({
+    title: `Hello, ${user.name} ${user.surname}!`,
+    content: 'Welcome to our site!'
+  })
+}
+</code></pre>
+          </div>
+            <a 
+              class="button ghost external-link"
+              target="__blank"
+              href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQjIFcB2BjALgS1uqAM4AWCAsrACYCG0AFAA40BONAtkQJSgDeioUJgJFY0AKYA6OAHMmrDkUl5sErgG4BQkWKmz5bTpOHps40xsQBfZGix4CxGgE8AEuOhx6qIuJY9+QVIKajp6QMFQFQkALlAAIndPWAAaBNAAalAfP0l0DnFM9PiinJZJIlQWfPZCrPiAQniUrUETM1M4gHIAdQ9hWqjYUFgq4lwzBq6tKy5rIA"
+            >
+                  See in action ›
+            </a>
+        </section>
+
+        <section class="bg-black-blue">
+            <span class="background" style="background-image:url('static/images/screaming.jpg')"></span>
+            <div class="wrap">
+              <h4 class="console-error">
+                Uncaught TypeError: Cannot read property "name" of undefined!
+              </h4>
+            </div>
+        </section>
+        
+        <section class="bg-white">
+          <div class="wrap aligncenter">
+            <h1>Quick intro into syntax</h1>
+            <img src="static/images/flow-syntax.png" />
+          </div>
+        </section>
+
+        <section class="bg-black-blue">
+          <div class="wrap">
+            <h1>Basic types</h1>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>boolean</h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>number</h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>string</h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>null</h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>void</h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>Array</h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>Object</h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>any</h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>Function</h2>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a 
+            class="button ghost external-link"
+            target="__blank"
+            href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQiSgAYDsCuBbARgKYBOaoAlhgMbRYAmBAzqAHICGzorGtoAkhpApkALgE9ElWBgbDQNSgGtRzXISIAuUNnzFQAXlABGAAwBuCVJlbYwgMqwAMlkXLVxTdrX6W7cyjAAbrBkPACEegbY0NAW0rK0rMKsmkEh3ljcBIIYBLR+qACCRESsogA8ACoAfLFWOIwMrADmjJpFJeUyRBRNVd4A2gDkABYE0bCDADSgg-CwRNC0UzOhgwC6+WAA8ngAVgSUwgy1sqx4sFjCALIEmgDeWqz1ml090823Wm5EoAC+3ndEKBHs8ZgVoAQAB5TIGcFqaABMADZJohfuZJHEQYwCtwAMIiMitUAPfoYJ6fV4YJprF7CbrUv4A2HgqGaQYAdSIsGorHgMOBrMhBFE7NsrAosgACgRhMQGHgsEQmoM0ZtOBhxAFWD8yHiuAAhAi40TCYY9TRcUTeQYOAp2wagADUoAR6oAYhlDmRLIhtT9KKxoJQsNBEsaiARWN4ABQlWhkLAMDzfACUKZ0Pz0fUBwMjwiVGFAAGYAHSGAAsoAAVKB44mmLX60m1X6daBA8HQ+GilGEZpPVRhD6iwYY6n9Dn0YggA"   
+          >
+                See in action ›
+          </a>
+        </section>
+
+        <section class="bg-black-blue">
+          <div class="wrap">
+            <h1>More features</h1>
+            <ul class="flexblock features">
+              <li>
+                <a
+                  target="__blank"
+                  href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQjgCpEEgBiBLATgM4AuoApgB4CGAtgA7SmKrCIDGsAdsaLQFygAFPLGo4CpADzE8ODgHMAfKAC8oDqXiDho8QAo8pArGgA3UiqUBvRKFugDR06V0ByAIwuAlAG5EAXx9kNEwAZVJ2DgATMio6BiYWSgIATw5WUEgAVzSiHE5QGlhsogBRclZSUkiCAUy8VgALJNIAGRxRIl0bAuoijiJ+DkzqACNSPAAabrlSIlr6pvE2jv5dTwstETFJIdHxhURPfiEt8QkR2GNSSg4rbojuaHacElVKeEoX0Bm5usbm5YvNa+WwGIh1DigJ4dUBKQrFXx+ZDI5BAA"
+                >
+                  <h2>async</h2>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="__blank"
+                  href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQjgCpQBUCeAHApqAIbQCWhAznuaKsMgC64EAKhWAtngHb0Cye9ABawAJqAC8oAN6JQoEiIBcoLgFd2AIzwAnADSyVhTsvL1tJLgHN9c0uxL1lazTv0BfANzIAboW2h2LFZcYmVgzh5+IVEJaQMFZQBGACYAZgAWAFYANhtDY1AAcgBBaDwAD1AAZVU8XzhvQry7BySABg62xE9kIA"
+                >
+                  <h2>type aliases</h2>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="__blank"
+                  href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQjgCpQHECmA7LAnASwGMBnUVYZAFwE8AHLTXAkgeQCMArLY6gHgAqAPlABeUAG9QAayy0AXKEGgAvgG5kANwCG+UDgCuAWw4FBS7HiLFOPPvyOmCoidLmLQARgBMAZlA1TV19UmoiHABzC2Zrdm5eATCIyNcpWXklACIABXwsLGoAC0IsoMQQ0D18HVoYq1ZbBIcAQXwa2kcTM3xhNPdM0ABtLwAaUB9xvwBdNWQQUDaO8bzYY0JSJj0t6FJYUEiWG1IgA"
+                >
+                  <h2>generics</h2>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="__blank"
+                  href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQjgCpQFsCGBPARgKairDIBuWATpgQM61YDmBAXKAPy0AulAlgHaNQAXlD8ArtGgBuZFxwAHIgAUClWrH4jQAb0ShQkXuq4A5LBlahufQQBp9mXgBNn0AgEl+vLryzR2NhsBRgcDaCxuc0sgnhCHAF9ZFHQCAA8sAGMuYlJEeSVQAGU47NV1TW0dAB9HIxNoq2D7RwwXN09vX39A6ziW8MizCyb+0MRqhKA"
+                >
+                  <h2>maybe & exact</h2>
+                </a>
+              </li>
+              <li>
+                <a target="__blank"
+                  href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQjgCpQBMCWBnAVrFgHY6irDIAuAngA4CmoACgIZ0vSgC8oA3qFgwAuUEQCuAWwBG9AE4AaUDQYiA5K3bRVoAL4BuRMsYBhWfWyVjLWRm58Bw0ZJkKldemtPmsl6xm36hu6gAEIsRADWdvyCIuLScopGamGRAQZBDMxsEvRElACy9JQAFrC2PBq0HKAAPqBeFlY2daHhEXpAA"
+                >
+                  <h2>disjoints</h2>
+                </a>
+              </li>
+              <li>
+                <div>
+                  <h2>imports & exports</h2>
+                </div>
+              </li>
+              <li style="text-align: center">
+                <a target="__blank" href="https://flowtype.org/try/#0PTAEAEDMBsHsHcBQiDG0CGBnToBKBTFAF3QDsBzafUAb0VFHgEsATIgCwC5RSBXAWwBG+AE4BueqHb4m5dkW58hoiZJSxSmIiN7FYIgBTM27ADRSZcogEpakhhyaYAdMY6gAvI1YcJDB+xOztKy8p4WoUR+oAC+yAwoTCIoApCi+KQo+Aa2dP6gIvhEvCKkoAaOLm7soABUoABMtgDU5ZXBlmH1TZJxkuiF6Dl2+YXFpaDt1XWTgS4hVtFxfQBuAwWEJBRU4aT48HibZJTZAIwADOYALNYSayKgA-jo3FoiTBThhcTHVM5PQ1uQA">
+                  <h2>inference</h2>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <h2>Setting up Flow</h2>
+            <pre style="margin-top: 30px;">
+              <code class="bash">$ npm install --save-dev babel-plugin-transform-flow-strip-types
+$ npm install --global flow-bin</code>
+            </pre>
+          </div>
+        </section>
+
+        <section class="bg-white">
+          <div class="wrap size-50">
+            <img src="static/images/flow-typed-logo.png" />
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap aligncenter">
+            <h2>Flow & React</h2>
+            <div class="grid vertial-align">
+              <div class="column" style="flex-direction: row-reverse">
+                  <img src="static/images/flow.png" width="400" height="400" />
+              </div>
+              <div class="column">
+                  <img src="static/images/react-logo.png" width="300" height="300" style="margin-top: 50px;" />
+              </div>
+            </div>
+            <a 
+            class="button ghost" 
+            target="__blank" 
+            rel="noopener"
+            href="https://flowtype.org/try/#0PQKgBAAgZgNg9gdzCYAoVBjOA7AzgFzACUBTAQw0IF4wAnEgRwFcBLegCgHJ6L9OBKANyYcBYuUoARAPIBZMDXrM2JLj0oBaACZwAtgOGp8ATwAOJMAAVacU7gVgA3qjBh8LfDBIAuMAVos2ADmADQuYABuLLgeJFq+AEZwcF5k2GGuOADCMCwYANa+7PwKAHyRcCxaYQC+hhgwZLj2AEJM+Pg4YCQAHvgk2Fr2pLwAdFl6pjgDhM6upjZ2vta2uIauBGT9vnOuYFrRpo3Gvpyb7hicYAA+YJwAFnARJLRXt5y8LM+cGWB16Bt8Fs8vsSFAyEwYPgVksnJForF4mAkilyNg-uswDhZHAmLgSABRbD9WhFEpUcoRSpaYSZbA4vEkAAy5GeZLKFSqtKx9Nx+MkiGw7IpnJpALAWDw+FoTEocFo7AWq2Wi1wJV2GyY5gVSrsQnCrnw92io3OFhoGr2B1wRzIJzu5zyPwNGPFrklYnx+Ekh2ODmttuMHKNJq9AGUgf12I4A8cavqXSHcKNsXzCcSXg5ihyvT6bccuI9nq99Xs3Mbk6nGSyyM8s+TyrnfXauI7LqW9kmU7zGQKEOiaNmRU38y2PpQviQDOEauL6IMXtnLV5CA0mrgAHJkXTmu4JdqddFXADU5dDkZIo1jdu5rhYUDA7C7uuTURi-S06pd7sazS3O7AY8aCuN9EU4W8-jdOgSHwJhaHRdhvzAAAeA4IglX9N23EgqEcNc-2w2cyzLKt8SJElcK7Uj0xJIjiLpBl8RrZ5KIrbtGOZVkSDo+jqL7bBWJNPjBR44jslyApBOTF9uxyPJ8hqUokNcRxn1VUZ3E8bikOQ4A0KUssO1nWc2g6HArzBCEoRhewLXhd84l8cEYHxV1UCgJhsAnLp5y0F5TMPdhJSBQIXl8AAJAAVWQmQJLwd2JEJ7MRAB+RJklSbAv3dURCBIeKZizF1kICnAkM0rwqAAIjkgowB3ABCKqkNAj9cNauJRLpWr8lwodyktMtfP8g8cCCnAQuwF4kulJgSA7MsalE4ADLADsRikORRmGhV8pIBL8CS4KyFC2h9RqIA"
+          >
+            See in action ›
+          </a>
+          </div>
+        </section>
+
+
+        <section class="bg-apple">
+          <div class="wrap aligncenter">
+            <h2>Flow & Redux</h2>
+            <div class="grid vertial-align">
+              <div class="column" style="flex-direction: row-reverse">
+                  <img src="static/images/flow.png" width="400" height="400" />
+              </div>
+              <div class="column">
+                  <img src="static/images/redux-logo.png" width="300" height="300" style="margin-top: 50px;" />
+              </div>
+            </div>
+            <a 
+            class="button ghost" 
+            target="__blank" 
+            rel="noopener"
+            href="https://flowtype.org/try/#0PQKgBAAgZgNg9gdzCYAoVxhgBYBdcAOAzgFyYDmAlrtgK4BGAdAMZwC2wU9RAhmwTACmRTgA4eBAulCoAkADFKAJyK4wggB58Bg1CjDpWAO1VgAKgHkAIhYD6AQQDCZgJIWAcgGUwAXjABvVDAweysrW0sbEjAAclDwyIsYgBogsAAlAFEAWQsANUyI6wtomKzcgqKbFLTHC2yABQAZTLNCxNK6xpa2qqTUAF8AbnRcAE8CQRDmXEo4I18wABIAaUExogAeccm4KHNih2c3LwA+EYATQWYYHiUpqFojGbmFi8oiAh5cZmwACh4L3m0XsQKMyTAXzG8B4F2iFnoACtrrgAJTRABucEoFxGqHen2+vz+MU89UKTlcHhSATAOOiAEYwANUXiMCA0mBPNd5hd1Fp+EI9GhUDspgBVIiCJSeXDfKZ+QLBD5NODkciCC4uIzRehwOBCHhGEbBIx8QTRVRKShGcgjYaGeamG3USg8GCy+XRSXSz24BUBNIqtUarU6sBQd1S1Km82lGKDPGPZ6zeZgWhSpR-VResA+mVy-2LF2zd1+wQQwGp8MI5EzdF5zPlwMDIA" 
+            >
+              See in action ›
+            </a>
+          </div>
+        </section>
+
+        <section class="bg-white">
+          <span class="background-right-bottom" style="background-image:url('static/images/tooling.png')"></span>
+          <div class="wrap size-70">
+            <h2>Growing tooling infrastructure</h2>
+            <ul style="margin-top: 5rem;">
+              <li><a  style="font-size: 2.3rem; line-height: 5rem" target="_blank" rel="noopener" href="https://codemix.github.io/flow-runtime">https://codemix.github.io/flow-runtime</a></li>
+              <li><a  style="font-size: 2.3rem; line-height: 5rem" target="_blank" rel="noopener" href="https://github.com/rpl/flow-coverage-report">https://github.com/rpl/flow-coverage-report</a></li>
+              <li><a  style="font-size: 2.3rem; line-height: 5rem" target="_blank" rel="noopener" href="https://github.com/gajus/eslint-plugin-flowtype">https://github.com/gajus/eslint-plugin-flowtype</a></li>
+              <li><a  style="font-size: 2.3rem; line-height: 5rem" target="_blank" rel="noopener" href="https://github.com/documentationjs/documentation">https://github.com/documentationjs/documentation</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="bg-white">
+          <div class="wrap size-50 aligncenter">
+            <h2>IDE/Editor support</h2>
+            <img src="static/images/ide.jpg" style="margin-top: 30px" />
+          </div>
+        </section>
+
+        <section class="bg-black-blue">
+          <span class="background dark" style="background-image:url('static/images/competition.jpg')"></span>
+          <div class="wrap size-50 aligncenter">
+            <h2>TypeScript vs. Flow</h2>
+            <div class="grid vertial-align">
+              <div class="column">
+                <h4>TypeScript</h4>
+                <ul style="font-size: 2.2rem; margin-top: 2rem;">
+                  <li>Compiler + Type Checker</li>
+                  <li>Has its own parser</li>
+                  <li>Requires to write more explicit types</li>
+                  <li>Great support and adoption</li>
+                  <li>Written in TypeScript by Microsoft</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h4>Flow</h4>
+                <ul style="font-size: 2.2rem; margin-top: 2rem">                
+                  <li>Type Checker</li>
+                  <li>Uses Babel as parser</li>
+                  <li>Access to Babel infrastructure</li>
+                  <li>Very good at inferring types</li>
+                  <li>Written in OCaml by Facebook</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white">
+          <div class="wrap">
+            <h2>Why use typings?</h2>
+            <div class="card-50">
+              <div class="flex-content">
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <h2>Shipping fewer bugs to production</h2>
+                      You can detect bugs and errors early.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>Better documentation</h2>
+                      Clear containts and preconditions, the way easier to read code.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>Ease of development</h2>
+                      Better autocomplete, refactoring with greater confidence
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>Other</h2>
+                      Reduces excessive error handling and the number of unit tests. Provides a domain modeling tool.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .flex-content-->
+              <figure>
+                <img class="aligncenter" src="static/images/typewriter.jpeg">
+              </figure>
+            </div>
+            <!-- .end card-50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section class="bg-black-blue">
+          <span class="background dark" style="background-image:url('static/images/red-blue-pills.jpg')"></span>
+          <div class="wrap aligncenter">
+            <h2>When use typings?</h2>
+            <div class="card-50">
+              <div class="flex-content">
+                <h4>Use</h4>
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <h2>The program is critical to business</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>The program is likely to be refactored as your needs evolve</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>The program is complex and has many moving parts</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>The program is maintained by a large team of developers</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .flex-content-->
+              <div class="flex-content">
+                <h4>Don't use</h4>
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <h2>The code is short-lived and non-critical</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>You're prototyping and trying to move as quickly as possible</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>The program is small and/or simple</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>You're the only developer</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- .end card-50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-white">
+          <div class="wrap">
+            <h2>Which should I use?</h2>
+            <div class="card-50">
+              <figure>
+                <img class="aligncenter" width="400" src="static/images/ts.png">
+              </figure>
+              <div class="flex-content">
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <h2>You value strong tooling integration</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>You're starting a new project from scratch</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>You're using Angular 2</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>You want to take advantage of more mature typedefs</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- .end card-50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <section class="bg-white">
+          <div class="wrap">
+            <h2>Which should I use?</h2>
+            <div class="card-50">
+              <figure>
+                <img class="aligncenter" width="400" src="static/images/flow.png">
+              </figure>
+              <div class="flex-content">
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <h2>You have an existing project</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>You're using React</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>You want to use Babel now or later</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- .end card-50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black-blue">
+          <span class="background" style="background-image:url('static/images/just-do-it.gif')"></span>
+          <div class="wrap aligncenter">
+          <h1 style="background-color: black; display: inline-block;">Do it. Just do it.</h1>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <h2>Links & Resources</h2>
+            <ul style="margin-top: 2rem; font-size: 2.2rem;">
+              <li><a target="__blank" href="https://flowtype.org/">https://flowtype.org/</a></li>
+              <li><a target="__blank" href="https://www.youtube.com/watch?v=Qiqsg02nXFE">JavaScript Air Episode 038: Typed JavaScript with TypeScript and Flow</a></li>
+              <li><a target="__blank" href="https://www.youtube.com/watch?v=VEaDsKyDxkY">Jeff Morrison - A Deepdive Into Flow at react-europe 2016</a></li>
+              <li><a target="__blank" href="https://www.reaktor.com/blog/refactoring-30000-lines-js-types/">Refactoring 30000 lines of JS with types</a></li>
+              <li><a target="__blank" href="http://javascriptplayground.com/blog/2017/01/npm-flowjs-javascript/">Authoring and publishing JavaScript modules with Flow</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="bg-black-blue">
+          <span class="background dark" style="background-image:url('static/images/thanks.gif')"></span>          
+          <div class="wrapa aligncenter">
+            <h1 style="font-size: 10rem;">Thanks!</h1>
+            <ul style="margin-top: 6rem; font-size: 3rem; list-style: none;">
+              <li style="line-height: 6rem;"><a target="__blank" href="http://suevalov.com/">http://suevalov.com/</a></li>
+              <li style="line-height: 6rem;"><a target="__blank" href="https://twitter.com/suevalov">@suevalov</a></li>
+              <li style="line-height: 6rem;"><a target="__blank" href="http://github.com/suevalov">http://github.com/suevalov</a></li>
+            </ul>
+          </div>
+        </section>
+      
+
+      </article>
+    </main>
+    <!-- end main -->
+
+    <!-- jQuery (required for slides to work) -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="static/js/webslides.js"></script>
+    <script src="static/js/custom.js"></script>
+    
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
